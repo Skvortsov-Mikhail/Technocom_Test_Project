@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 1518053530982439539}
   - component: {fileID: 299756908169533047}
   - component: {fileID: 4812839521508889059}
+  - component: {fileID: 3078390297981265177}
   m_Layer: 5
   m_Name: DailyReward
   m_TagString: Untagged
@@ -212,6 +213,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3078390297981265177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079031237453978958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de014d70af588184face10ea1517b294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dayIndex: 0
+  m_value: 0
+  m_dayText: {fileID: 3920727669235148835}
+  m_valueText: {fileID: 7012844036261418692}
 --- !u!1 &6561265024480393086
 GameObject:
   m_ObjectHideFlags: 0
