@@ -47,5 +47,5 @@ MonoBehaviour:
   m_dailyRewardsCount: 7
   _claimCooldownInHours: 24
   m_useDebugStreak: 0
-  m_debugStreak: 6
+  m_debugStreak: 0
   m_clearSavedData: 1

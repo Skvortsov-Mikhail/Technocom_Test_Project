@@ -1,0 +1,3 @@
+Product ID,Published State,Purchase Type,Auto Translate,Locale; Title; Description,Auto Fill Prices,Price,Pricing Template ID
+epic_chest,published,managed_by_android,false,en_US;Epic Chest;Get 500 tickets,true,1990000,
+lucky_chest,published,managed_by_android,false,en_US;Lucky Chest;Get 1200 tickets,true,4990000,
