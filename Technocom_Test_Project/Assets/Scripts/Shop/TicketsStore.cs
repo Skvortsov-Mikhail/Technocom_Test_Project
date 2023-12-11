@@ -13,7 +13,7 @@ public class TicketsStore : MonoBehaviour
         _ticketsController = ticketsController;
     }
 
-    private void Start()
+    private void Awake()
     {
         m_items = GetComponentsInChildren<TicketStoreItem>();
     }

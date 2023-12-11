@@ -12,6 +12,8 @@ public class TicketStoreItem : StoreItem
 
     [SerializeField] private TMP_Text _unlockLevelText;
 
+    private bool m_locked = true;
+
     private TicketsStore _ticketsStore;
     [Inject]
     public void Construct(TicketsStore ticketsStore)
@@ -27,8 +29,9 @@ public class TicketStoreItem : StoreItem
 
         m_buttonLocker.SetActive(false);
 
-        m_iconLocker.SetActive(true);
-        _buyButton.interactable = !m_iconLocker.activeSelf;
+        m_iconLocker.SetActive(m_locked);
+        _buyButton.interactable = !m_locked;
+
     }
 
     protected override void PressBuyButton()
@@ -41,7 +44,11 @@ public class TicketStoreItem : StoreItem
 
     public void UnlockItem()
     {
+        if (m_locked == false) return;
+
+        m_locked = false;
+
         m_iconLocker.SetActive(false);
-        _buyButton.interactable = !m_iconLocker.activeSelf;
+        _buyButton.interactable = true;
     }
 }
